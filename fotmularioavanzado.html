@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Avanzado</title>
+</head>
+<body>
+    <!----La Url encargada de manejar-->
+    <form action="maneja formulario.php" method="post">
+        <fieldset id="parte1">
+            <legend>Datos Personales</legend>
+                <label for="nombre">Nombre </label><br/>
+                <input type="text" name="nombre" id="nombre" value="">
+            <br/>
+                <label for="apellidos">Apellidos</label><br/>
+                <input type="text" name="apellidos" id="apellidos" value="">
+            <br/>
+                <label for="documento">DNI</label><br/>
+                <input type="text" name="documento" id="documento" value="">
+            <br/>
+        </fieldset>
+        <fieldset id="parte2">
+            <legend>Datos de conexion</legend>
+                <label for="usuarios">Nombre de usuario</label><br/>
+                <input type="text" id="usuario" name="usuario">
+            <br/><br/>
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" value="" maxlength="10" >
+            <br/><br/>
+                <label for="contraseña">Repite Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" value="" maxlength="10">
+        </fieldset>
+    </form>
+    <form action="insertar.php" method="post">
+        <h2>Datos del Producto </h2>
+            <label for="producto">Nombre del Producto</label><br/>
+            <input type="text" name="producto" id="producto">
+        <br/>
+        <label for="descripcion">Descripcion del producto</label><br/> 
+        <textarea name="descripcion" id="descripcion" cols="40" rows="10"></textarea>
+    </form>
+    <!-----Listas Desplegables-->
+    <!-----opcion 1-->
+        <h2>Listas Desplegables</h2>
+    <label for="so" name="so">Sistema Operativo</label>
+        <select id="so" name="so">
+            <option value="" selected="selected">- seleccionar</option>
+            <option value="windows">Windows</option>
+            <option value="mac">Mac</option>
+            <option value="linux">Linux</option>
+            <option value="otro">Otro Sistema Operativo</option>
+        </select>
+      <br/><br/>
+    <!------opcion 2-->
+        <label for="so2" name="so2">Sistema Operativo</label><br/>
+        <select id="so2" name="so2" size="2">
+            <option value="" selected="selected">- seleccionar</option>
+            <option value="windows">Windows</option>
+            <option value="mac">Mac</option>
+            <option value="linux">Linux</option>
+            <option value="otro">Otro Sistema Operativo</option>
+        </select>
+        <br/><br/>
+    <!----- opcion 3 -->   
+        <label for="so3" name="so3">Sistema Operativo</label><br/>
+            <select id="so3" name="so3" multiple="multiple">
+                <option value="" selected="selected">- seleccionar</option>
+                <option value="windows">Windows</option>
+                <option value="mac">Mac</option>
+                <option value="linux">Linux</option>
+                <option value="otro">Otro Sistema Operativo</option>
+            </select>
+        <br/>
+        <br/>
+        <!----Agrupa opciones -->
+        <label for="programa" name="programa">Programa Seleccionado</label><br/>
+            <select id="so3" name="so3">
+                <optgroup label="Sistema operativo">
+                    <option value="" selected="selected"> Windows </option>
+                    <option value="mac">Mac</option>
+                    <option value="linux">Linux</option>
+                    <option value="otro">Otro Sistema Operativo</option>
+                </optgroup> 
+                <optgroup label="Navegadores">
+                    <option value="IE" selected="selected"> Internet Explorer </option>
+                    <option value="op">Opera</option>
+                    <option value="sa">Safari</option>
+                    <option value="fi">Firefox</option>
+                    <option value="ot">Otro Sistema</option>
+                </optgroup>    
+            </select>
+    </body>
+</html>

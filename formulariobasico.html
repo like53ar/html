@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Basico</title>
+</head>
+<body>
+    <h1>Formulario Basico</h1>
+    <form method="post" action="">
+        Escribe tu nombre:
+        <input type="text" name="nombre" value="" alt="texto"/>
+        <br/><br/>
+        <input type="password" name="password" value="" size="5" maxlength="5" checked="checked" />
+        <br/><br/>
+        <br/><br/>
+        Puestos de Trabajos Buscados <br/>
+        <input type="checkbox" name="checkbox" value="direccion" size="100" maxlength="100"  /> Direccion <br/>
+        <input type="checkbox" name="checkbox" value="tecnico " size="100" maxlength="100"  />  Tecnico<br/>
+        <input type="checkbox" name="checkbox" value="empleado" size="100" maxlength="100"  />  Empleado<br/>
+        <br/><br/>
+        Marcar el circulo sexo <br/><br/>
+        <input type="radio" name="radio" value="masculino" size="100" maxlength="100"  />masculino <br/>
+        <input type="radio" name="radio" value="masculino" size="100" maxlength="100"  />femenino <br/>
+        <br/><br/>
+        <input type="image" name="image" value="" size="100" />
+        <br/><br/>
+        <input type="button" name="button" value="Guardar Cambios" />
+        <br/><br/>
+        <input type="submit" value="Enviar" />
+        <br/><br/>
+        <!----Boton de Reseteo de Formulario borra todos los datos del formulario----->
+        Limpiar el formulario <br/>
+        <input type="reset" name="limpiar" value="Reset" /><br/><br/>
+        <!-----Ficheros Adjuntos-->
+        Fichero Adjunto <br/>
+        <input type="file" name="adjunto" />
+        <br/><br/>
+        <input type="file" name="fichero" method="POST" enctype="multipart/form-data" /> 
+    </form>
+</body>
+</html>

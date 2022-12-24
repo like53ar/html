@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fabian Correa">
+    <meta name="generator" content="Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1)">
+    <meta name="copyright" content="mac">
+    <meta name="robots" content="index, follow">
+
+    <title>Definiciones Meta</title>
+</head>
+<body>
+    <h2>Informacion sobre el producto</h2>
+    <div id="cabecera" class="header">
+        <fieldset id="cuadro1">
+            <legend>Datos basicos</legend>
+        <br/>
+                <label for="nombre" name="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre"><br/>
+        <br/>
+                <label for="descripcion" name="descripcion">Descripcion</label><br/>
+                <textarea name="descripcion" id="descripcion" cols="40" rows="10"></textarea>
+        <br/><br/>
+                <label for="Foto" name="foto" id="foto">Foto </label><input type="file" name="Foto">
+        <br/>
+        <br/>
+                <input type="checkbox" name="contacto" id="contacto"><label for="visitas">Añadir contador de visitas</label>
+        </fieldset>
+    </div>
+    <div id="contenido"  class="content">
+    <fieldset id="cuadro2">
+     <legend>Datos economicos</legend>
+     <br/><br/>
+        <label for="precio" name="precio">Precio</label><input type="text" name="precio" id="precio"> &nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="impuesto" name="impuesto">Impuestos</label>
+        <select id="so" name="so">
+            <option value="4%">4 %</option>
+            <option value="7%">7 %</option>
+            <option value="8%">16 %</option>
+            <option value="25%">25 %</option>
+        </select>
+    <br/><br/>
+        <label for="promocion" name="promocion">Promocion</label><br/>
+        <input type="checkbox" name="prom1">&nbsp;<label for="ninguno" >Ninguno</label><br/>
+        <input type="checkbox" name="prom2">&nbsp;<label for="tg" >Transporte Gratuito</label><br>
+        <input type="checkbox" name="prom">&nbsp;<label for="mn" >Descuento 5 %</label><br/>
+    </fieldset>
+    <address>
+        Nombre de la Empresa
+        Direccion Completa
+    </address>
+</body>
+</html>
